@@ -1,0 +1,27 @@
+### Short a url
+POST http://localhost:3245/api/shortUrl
+Content-Type: application/json
+
+{
+    "url":"https://google.com"
+}
+
+### Vsit Url
+GET http://localhost:3245/hlLbEgA6x
+
+### Custom Slug
+POST http://localhost:3245/api/customUrl
+Content-Type: application/json
+
+{
+    "url":"https://google.com",
+    "slug": "google"
+}
+
+### Test availablity
+POST http://localhost:3245/api/available
+Content-Type: application/json
+
+{
+    "slug": "google"
+}
